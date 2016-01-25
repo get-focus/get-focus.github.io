@@ -1,22 +1,22 @@
 <!doctype html>
 <!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
+Material Design Lite
+Copyright 2015 Google Inc. All rights reserved.
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-      https://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License
 -->
 <html lang="fr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Focus entry point.">
@@ -40,555 +40,555 @@
     <link rel="shortcut icon" href="images/favicon.png">
 
     <!--
-      SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-      <!--
-      <link rel="canonical" href="http://www.example.com/">
-      -->
-
+    SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.deep_purple-pink.min.css">
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="focus.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <link rel="canonical" href="http://www.example.com/">
+-->
+
+<!--
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.deep_purple-pink.min.css">
+-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="focus.css">
+<style>
+#view-source {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+</style>
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row" data-title="focus">
-          <h1>Get <strong>Focus</strong></h1>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#libs" class="mdl-layout__tab is-active">Libs</a>
-          <a href="#extensions" class="mdl-layout__tab">Extensions</a>
-          <a href="#docs" class="mdl-layout__tab">Docs</a>
-          <a href="#showcase" class="mdl-layout__tab">Showcase</a>
-          <a href="#demo" class="mdl-layout__tab">Demo</a>
-          <a href="#tools" class="mdl-layout__tab">Tools</a>
-          <a href="#technology" class="mdl-layout__tab">Technology</a>
-          <a href="#comm" class="mdl-layout__tab">Comm</a>
-          <a href="#formation" class="mdl-layout__tab">Formation</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" onclick="window.location.href='mailto:focus@kleegroup.com?subject=[GET-FOCUS] Remarque / Question'" id="add">
-            <i class="material-icons" role="presentation">email</i>
-            <span class="visuallyhidden">email</span>
-          </button>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-
-        <!-- Libs -->
-        <div class="mdl-layout__tab-panel is-active" id="libs">
-        <!--TITLE EXTENTSIONS DISPOS-->
-        <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h3>Les librairies FOCUS</h3>
-              <p>Ces librairies JavaScript offrent tous les outils pour accélérer le développement d'une application web SPA (<a href="https://en.wikipedia.org/wiki/Single-page_application" title="Lien SPA" alt="Lien SPA" target="_blank">Single Page Application</a>).
-              Tous nos développements sont Open-Source et disponibles sur <a href="https://github.com/Kleegroup/">Github</a>.</p>
+        <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
             </div>
-        </section>
-          <!-- Focus core-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus Core</h4>
-                <p>Focus-core est la librairie au coeur des développements FOCUS.<br/>
-                Elle met à disposition l'ensemble des outils pour accélérer et fiabiliser le développement de comportements récurrents au sein de votre application.<br/>
-                Parmi ces outils, en voici les principaux : </p>
-                <ul>
-                  <li>Les communications réseaux avec les serveurs BACKEND</li>
-                  <li>La gestion automatisée des formulaires (domaines, définitions...)</li>
-                  <li>L'implémentation de l'architecture <a href="https://facebook.github.io/flux/" target="_blank" title="Lien vers l'architecture FLUX" alt="Lien vers l'architecture FLUX">FLUX</a> qui spécifie le modèle de communication et des composants dans l'application</li>
-                  <li>Le router de l'application, qui standardise une méthode commune pour la navigation au travers de "routes" applicatives</li>
-                </ul>
-                <p>Cette librairie ne publie aucun composant graphique. Elle est cependant au coeur des dépendances des développements FOCUS.</p>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-core" class="mdl-button">Github</a>
-              </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row" data-title="focus">
+                <h1>Get <strong>Focus</strong></h1>
             </div>
-
-          </section>
-
-          <!-- Focus components-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus Components</h4>
-                <p>Focus-components est la librairie des éléments graphiques FOCUS, prêts à l'emploi.<br/>
-                Telle une boite de LEGO&reg;, elle met à disposition beaucoup de composants pour accéler le développements des pages respectant un template FOCUS.<br/>
-                </p>
-                <p>Ces composants sont issus d'une recherche du "best of the web" et intègrent une réelle réflexion UX <i>(User Experience)</i>. Ils sont optimisés au quotidien pour tenter de maximer la DX <i>(Developer Exeperience)</i> et facilier ainsi la prise en main et l'utilisation par les développeurs Fontend.</p>
-                <p>Enfin, côté UI, cette librairie reprend tous les codes du Matérial Design en se basant sur la librairie <a href="http://getmdl.io" title="Material Design Lite" alt="Material Design Lite" target="_blank">Material Design Lite</a> de Google.</p>
-                </ul>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-components" class="mdl-button">Github</a>
-                <a href="http://kleegroup.github.io/focus-showcase/" class="mdl-button">Showcase</a>
-              </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
             </div>
-          </section>
-        </div>
-
-
-        <div class="mdl-layout__tab-panel" id="extensions">
-
-          <!--TITLE EXTENTSIONS DISPOS-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Les extensions (disponibles)</h3>
-                <p>Une extension FOCUS est une application à part entière, dont le métier lui est propre.
-                    Elle a pour vocation d'être autonome et publie :</p>
-                    <ul>
-                        <li>son <a href="https://en.wikipedia.org/wiki/Application_programming_interface" title="Lien API" alt="Lien API" target="_blank">API</a></li>
-                        <li>son interface d'administration</li>
-                        <li>un morceau d'IHM déportable dans les applications métier, via un script très simple d'intégration</li>
-                    </ul>
-                    API  Tous nos développements sont Open-Source et disponibles sur <a href="https://github.com/Kleegroup/">Github</a>.</p>
-              </div>
-          </section>
-
-          <!-- Focus file-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">cloud_upload</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus File</h4>
-                <p>Focus-file est une extension permettant de gérer l'upload de fichier de manière simple : via Drag and Drop.</p>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-file" class="mdl-button">Github</a>
-              </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="#libs" class="mdl-layout__tab is-active">Libs</a>
+                <a href="#extensions" class="mdl-layout__tab">Extensions</a>
+                <a href="#docs" class="mdl-layout__tab">Docs</a>
+                <a href="#showcase" class="mdl-layout__tab">Showcase</a>
+                <a href="#demo" class="mdl-layout__tab">Demo</a>
+                <a href="#tools" class="mdl-layout__tab">Tools</a>
+                <a href="#technology" class="mdl-layout__tab">Technology</a>
+                <a href="#comm" class="mdl-layout__tab">Comm</a>
+                <a href="#formation" class="mdl-layout__tab">Formation</a>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" onclick="window.location.href='mailto:focus@kleegroup.com?subject=[GET-FOCUS] Remarque / Question'" id="add">
+                    <i class="material-icons" role="presentation">email</i>
+                    <span class="visuallyhidden">email</span>
+                </button>
             </div>
-          </section>
+        </header>
+        <main class="mdl-layout__content">
 
-          <!-- Focus Notifications-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">add_alert</i>
-            </header>
+            <!-- Libs -->
+            <div class="mdl-layout__tab-panel is-active" id="libs">
+                <!--TITLE EXTENTSIONS DISPOS-->
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h3>Les librairies FOCUS</h3>
+                        <p>Ces librairies JavaScript offrent tous les outils pour accélérer le développement d'une application web SPA (<a href="https://en.wikipedia.org/wiki/Single-page_application" title="Lien SPA" alt="Lien SPA" target="_blank">Single Page Application</a>).
+                            Tous nos développements sont Open-Source et disponibles sur <a href="https://github.com/Kleegroup/">Github</a>.</p>
+                        </div>
+                    </section>
+                    <!-- Focus core-->
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                            <i class="material-icons">play_circle_filled</i>
+                        </header>
 
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus Notifications</h4>
-                <p>Focus notifications centralise les notification entre votre ou vos applications.
-                A la manière d'un centre de notification sur votre smart-phone.</p>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-notifications" class="mdl-button">Github</a>
-              </div>
-            </div>
-          </section>
-          <!-- Focus Comments-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">forum</i>
-            </header>
+                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                            <div class="mdl-card__supporting-text">
+                                <h4>Focus Core</h4>
+                                <p>Focus-core est la librairie au coeur des développements FOCUS.<br/>
+                                    Elle met à disposition l'ensemble des outils pour accélérer et fiabiliser le développement de comportements récurrents au sein de votre application.<br/>
+                                    Parmi ces outils, en voici les principaux : </p>
+                                    <ul>
+                                        <li>Les communications réseaux avec les serveurs BACKEND</li>
+                                        <li>La gestion automatisée des formulaires (domaines, définitions...)</li>
+                                        <li>L'implémentation de l'architecture <a href="https://facebook.github.io/flux/" target="_blank" title="Lien vers l'architecture FLUX" alt="Lien vers l'architecture FLUX">FLUX</a> qui spécifie le modèle de communication et des composants dans l'application</li>
+                                        <li>Le router de l'application, qui standardise une méthode commune pour la navigation au travers de "routes" applicatives</li>
+                                    </ul>
+                                    <p>Cette librairie ne publie aucun composant graphique. Elle est cependant au coeur des dépendances des développements FOCUS.</p>
+                                </div>
+                                <div class="mdl-card__actions">
+                                    <a href="https://github.com/KleeGroup/focus-core" class="mdl-button">Github</a>
+                                </div>
+                            </div>
 
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus Comments</h4>
-                <p>Focus comments vous permet d'ajouter une fonctionnalité de commentaire sur une entité spécifique, à la manière des réseaux sociaux.</p>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-comments" class="mdl-button">Github</a>
-              </div>
-            </div>
-          </section>
+                        </section>
 
-          <!--TITLE EXTENTSIONS A VENIR-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Les extensions (à venir)</h3>
-                <p>Les extensions suivantes sont en cours de conception. Elles seront disponibles très bientôt.</p>
-              </div>
-          </section>
-            <!-- Focus Help-->
-            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-              <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                <i class="material-icons">pets</i>
-              </header>
+                        <!-- Focus components-->
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                <i class="material-icons">play_circle_filled</i>
+                            </header>
 
-              <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text">
-                  <h4>Focus Help</h4>
-                  <p>Le centre d'aide ajoute de l'aide contextuelle à votre application.</p>
+                            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                <div class="mdl-card__supporting-text">
+                                    <h4>Focus Components</h4>
+                                    <p>Focus-components est la librairie des éléments graphiques FOCUS, prêts à l'emploi.<br/>
+                                        Telle une boite de LEGO&reg;, elle met à disposition beaucoup de composants pour accéler le développements des pages respectant un template FOCUS.<br/>
+                                    </p>
+                                    <p>Ces composants sont issus d'une recherche du "best of the web" et intègrent une réelle réflexion UX <i>(User Experience)</i>. Ils sont optimisés au quotidien pour tenter de maximer la DX <i>(Developer Exeperience)</i> et facilier ainsi la prise en main et l'utilisation par les développeurs Fontend.</p>
+                                    <p>Enfin, côté UI, cette librairie reprend tous les codes du Matérial Design en se basant sur la librairie <a href="http://getmdl.io" title="Material Design Lite" alt="Material Design Lite" target="_blank">Material Design Lite</a> de Google.</p>
+                                </ul>
+                            </div>
+                            <div class="mdl-card__actions">
+                                <a href="https://github.com/KleeGroup/focus-components" class="mdl-button">Github</a>
+                                <a href="http://kleegroup.github.io/focus-showcase/" class="mdl-button">Showcase</a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-              </div>
-            </section>
 
-            <!-- Focus Mobile-->
-            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-              <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                <i class="material-icons">phonelink_ring</i>
-              </header>
 
-              <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text">
-                  <h4>Focus Mobile</h4>
-                  <p>La gestion des applications mobiles avec Focus.</p>
+                <div class="mdl-layout__tab-panel" id="extensions">
+
+                    <!--TITLE EXTENTSIONS DISPOS-->
+                    <section class="section--center mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <h3>Les extensions (disponibles)</h3>
+                            <p>Une extension FOCUS est une application à part entière, dont le métier lui est propre.
+                                Elle a pour vocation d'être autonome et publie :</p>
+                                <ul>
+                                    <li>son <a href="https://en.wikipedia.org/wiki/Application_programming_interface" title="Lien API" alt="Lien API" target="_blank">API</a></li>
+                                    <li>son interface d'administration</li>
+                                    <li>un morceau d'IHM déportable dans les applications métier, via un script très simple d'intégration</li>
+                                </ul>
+                                <p>Tous nos développements sont Open-Source et disponibles sur <a href="https://github.com/Kleegroup/">Github</a>.</p>
+                            </div>
+                        </section>
+
+                        <!-- Focus file-->
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                <i class="material-icons">cloud_upload</i>
+                            </header>
+
+                            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                <div class="mdl-card__supporting-text">
+                                    <h4>Focus File</h4>
+                                    <p>Focus-file est une extension permettant de gérer l'upload de fichier de manière simple : via Drag and Drop.</p>
+                                </div>
+                                <div class="mdl-card__actions">
+                                    <a href="https://github.com/KleeGroup/focus-file" class="mdl-button">Github</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Focus Notifications-->
+                        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                <i class="material-icons">add_alert</i>
+                            </header>
+
+                            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                <div class="mdl-card__supporting-text">
+                                    <h4>Focus Notifications</h4>
+                                    <p>Focus notifications centralise les notification entre votre ou vos applications.
+                                        A la manière d'un centre de notification sur votre smart-phone.</p>
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://github.com/KleeGroup/focus-notifications" class="mdl-button">Github</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Focus Comments-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">forum</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus Comments</h4>
+                                        <p>Focus comments vous permet d'ajouter une fonctionnalité de commentaire sur une entité spécifique, à la manière des réseaux sociaux.</p>
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://github.com/KleeGroup/focus-comments" class="mdl-button">Github</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--TITLE EXTENTSIONS A VENIR-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>Les extensions (à venir)</h3>
+                                    <p>Les extensions suivantes sont en cours de conception. Elles seront disponibles très bientôt.</p>
+                                </div>
+                            </section>
+                            <!-- Focus Help-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">pets</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus Help</h4>
+                                        <p>Le centre d'aide ajoute de l'aide contextuelle à votre application.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Focus Mobile-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">phonelink_ring</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus Mobile</h4>
+                                        <p>La gestion des applications mobiles avec Focus.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                        <!-- DOCS  -->
+
+                        <div class="mdl-layout__tab-panel" id="docs">
+
+                            <!--TITLE documenttion -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>Documentation </h3>
+                                </div>
+                            </section>
+
+                            <!-- Focus blog-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">dialpad</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus Blog</h4>
+                                        Les derniers articles autour de Focus, les bonnes pratiques, ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://focus-doc.dev.klee.lan.net" class="mdl-button">Focus blog</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Vertigo blog-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">power_input</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Vertigo Blog</h4>
+                                        Les derniers articles autour de Vertigo, les bonnes pratiques, ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://vertigo-docs.dev.klee.lan.net" class="mdl-button">Vertigo blog</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Focus docs-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">speaker</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus doc</h4>
+                                        La documentation technique de focus, prise en main, ....
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://vertigo-docs.dev.klee.lan.net" class="mdl-button">Vertigo blog</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                        <!-- SHOWCASE-->
+                        <div class="mdl-layout__tab-panel" id="showcase">
+
+                            <!--TITLE -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>Le showcase des composants focus </h3>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://kleegroup.github.io/focus-showcase" class="mdl-button">Le showcase de focus</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- DEMO-->
+                        <div class="mdl-layout__tab-panel" id="demo">
+
+                            <!--TITLE -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>L'application de démo focus</h3>
+                                    <p>Mise en musique des composants</p>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://github.com/KleeGroup/focus-demo-app" class="mdl-button">La démo focus</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <!-- TOOLS -->
+                        <div class="mdl-layout__tab-panel" id="tools">
+
+                            <!--TITLE -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>Les outils mis à disposition par Focus </h3>
+                                </div>
+                            </section>
+                            <!-- Focus webpack-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">memory</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus webpack</h4>
+                                        Une config webpack clef en main pour builder votre projet focus
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://github.com/KleeGroup/webpack-focus" class="mdl-button">Focus webpack</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Focus eslint-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">functions</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus eslint</h4>
+                                        Une config eslint clef en main pour votre projet.
+                                        Règle de codage, bonnes pratiques, ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://github.com/KleeGroup/eslint-focus" class="mdl-button">Focus eslint</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Focus eslint-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">album</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus babel</h4>
+                                        Une config babel de base pour vos projets.
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://github.com/KleeGroup/babel-focus" class="mdl-button">Focus babel</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                        <div class="mdl-layout__tab-panel" id="technology">
+
+                            <!--TITLE -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>Technologies utiliseés par Focus </h3>
+                                </div>
+                            </section>
+
+                            <!-- React-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">dashboard</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>React</h4>
+                                        <p>
+                                            Elle est construite autour de principes très simples:
+                                            <ul>
+                                                <li>React ne sert qu'à créer des composants graphiques </li>
+                                                <li>Les composants sont par définition composables à l'infini. (un peu comme des Lego)</li>
+                                                <li>les composants graphques disposent de deux informations les props qui sont fournies par un composant parent et qui sont non mutables, le state qui est mutable et qui traduit de l'état interne du composant.</li>
+                                                <li>
+                                                    Habituellement les composants graphiques sont rendu directrement dans le Document Object Model aussi appellé DOM. Ce dernier, lié au navigateur est assez lent et possède de nombreuses informations liée au navigateur rendant complexe l'interaction avec ce dernier. En s'inspirant des moteurs de jeux video, React s'appuie sur un DOM Virtuel, à chaque changement d'état de l'application les composants concernés sont rendus à nouveau dans DOM virtuel.
+                                                    React a construit un pont entre le DOM réel et le DOM virtuel, chaque changement dans le DOM virtuel est reporté efficacement dans le DOM réel. Les gains en fiabilité et en performance sont concidérables sur une application.
+                                                </li>
+                                                <li>React apporte également la syntaxe JSX qui permet de combiner un style d'écriture à la HTML pour les composants tout en utilisant le JavaScript. Cette syntaxe a grandement contribué au succès de React</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://facebook.github.io/react/" class="mdl-button">React</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- MDL -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">opacity</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Material design</h4>
+                                        <p>
+                                            Focus prend le partie de s'appuyer sur le Material Design, proposé par Google dont la spécification est ici. Nous avons donc choisi de nous appuyer sur la librairie CSS réalisé par Google appellée Material Design Lite. La plupart des composants material sont intégrés directement par Focus mais n'hésitez pas à parcourir la documentation de Google qui est très bien réalisée.
+                                        </p>
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="https://facebook.github.io/react/" class="mdl-button">React</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+
+
+                        <!-- FORmation-->
+                        <div class="mdl-layout__tab-panel" id="formation">
+
+                            <!--TITLE -->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <h3>Les différentes formations données dans le cadre des projets utilisant focus </h3>
+                                </div>
+                            </section>
+
+                            <!-- Formation COnception-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">face</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Conception</h4>
+                                        ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://get-focus.github.io/formation-js/#/" class="mdl-button">Slides</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Formation JS-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">favorite</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>JavaScript</h4>
+                                        Les bonnes pratiques, ES2015, les closures, les Promises ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://get-focus.github.io/formation-js/#/" class="mdl-button">Slides</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Formation Style-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">opacity</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Le style de vos applications</h4>
+                                        Les bonnes pratiques CSS,SASS, flexbox ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://get-focus.github.io/formation-styles#/" class="mdl-button">Slides</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Formation React-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">extension</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>React</h4>
+                                        Les bases de React ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://get-focus.github.io/formation-react#/" class="mdl-button">Slides</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Formation Focus-->
+                            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                                <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                                    <i class="material-icons">group_work</i>
+                                </header>
+
+                                <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Focus</h4>
+                                        Les bases de Focus.js ...
+                                    </div>
+                                    <div class="mdl-card__actions">
+                                        <a href="http://get-focus.github.io/formation-focus#/" class="mdl-button">Slides</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+
+
+
+
+
+
+                        <!-- -->
+                        <footer class="mdl-mega-footer">
+                            <div class="mdl-mega-footer--bottom-section">
+                                Copyright &copy; KleeGroup 2016
+                            </div>
+                        </footer>
+                    </main>
                 </div>
-              </div>
-            </section>
-
-        </div>
-
-        <!-- DOCS  -->
-
-        <div class="mdl-layout__tab-panel" id="docs">
-
-          <!--TITLE documenttion -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Documentation </h3>
-              </div>
-          </section>
-
-          <!-- Focus blog-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">dialpad</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus Blog</h4>
-                Les derniers articles autour de Focus, les bonnes pratiques, ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://focus-doc.dev.klee.lan.net" class="mdl-button">Focus blog</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- Vertigo blog-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">power_input</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Vertigo Blog</h4>
-                Les derniers articles autour de Vertigo, les bonnes pratiques, ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://vertigo-docs.dev.klee.lan.net" class="mdl-button">Vertigo blog</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- Focus docs-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">speaker</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus doc</h4>
-                La documentation technique de focus, prise en main, ....
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://vertigo-docs.dev.klee.lan.net" class="mdl-button">Vertigo blog</a>
-              </div>
-            </div>
-          </section>
-
-        </div>
-
-        <!-- SHOWCASE-->
-        <div class="mdl-layout__tab-panel" id="showcase">
-
-          <!--TITLE -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Le showcase des composants focus </h3>
-                <div class="mdl-card__actions">
-                  <a href="https://kleegroup.github.io/focus-showcase" class="mdl-button">Le showcase de focus</a>
-                </div>
-              </div>
-            </section>
-        </div>
-
-        <!-- DEMO-->
-        <div class="mdl-layout__tab-panel" id="demo">
-
-          <!--TITLE -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>L'application de démo focus</h3>
-                <p>Mise en musique des composants</p>
-                <div class="mdl-card__actions">
-                  <a href="https://github.com/KleeGroup/focus-demo-app" class="mdl-button">La démo focus</a>
-                </div>
-              </div>
-            </section>
-        </div>
-
-
-        <!-- TOOLS -->
-        <div class="mdl-layout__tab-panel" id="tools">
-
-          <!--TITLE -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Les outils mis à disposition par Focus </h3>
-              </div>
-          </section>
-          <!-- Focus webpack-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">memory</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus webpack</h4>
-                Une config webpack clef en main pour builder votre projet focus
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/webpack-focus" class="mdl-button">Focus webpack</a>
-              </div>
-            </div>
-          </section>
-          <!-- Focus eslint-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">functions</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus eslint</h4>
-                Une config eslint clef en main pour votre projet.
-                Règle de codage, bonnes pratiques, ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/eslint-focus" class="mdl-button">Focus eslint</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- Focus eslint-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">album</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus babel</h4>
-                Une config babel de base pour vos projets.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/babel-focus" class="mdl-button">Focus babel</a>
-              </div>
-            </div>
-          </section>
-
-        </div>
-
-        <div class="mdl-layout__tab-panel" id="technology">
-
-          <!--TITLE -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Technologies utiliseés par Focus </h3>
-              </div>
-          </section>
-
-          <!-- React-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">dashboard</i>
-            </header>
-
-              <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text">
-                  <h4>React</h4>
-                  <p>
-                    Elle est construite autour de principes très simples:
-                    <ul>
-                      <li>React ne sert qu'à créer des composants graphiques </li>
-                      <li>Les composants sont par définition composables à l'infini. (un peu comme des Lego)</li>
-                      <li>les composants graphques disposent de deux informations les props qui sont fournies par un composant parent et qui sont non mutables, le state qui est mutable et qui traduit de l'état interne du composant.</li>
-                      <li>
-                        Habituellement les composants graphiques sont rendu directrement dans le Document Object Model aussi appellé DOM. Ce dernier, lié au navigateur est assez lent et possède de nombreuses informations liée au navigateur rendant complexe l'interaction avec ce dernier. En s'inspirant des moteurs de jeux video, React s'appuie sur un DOM Virtuel, à chaque changement d'état de l'application les composants concernés sont rendus à nouveau dans DOM virtuel.
-                        React a construit un pont entre le DOM réel et le DOM virtuel, chaque changement dans le DOM virtuel est reporté efficacement dans le DOM réel. Les gains en fiabilité et en performance sont concidérables sur une application.
-                      </li>
-                      <li>React apporte également la syntaxe JSX qui permet de combiner un style d'écriture à la HTML pour les composants tout en utilisant le JavaScript. Cette syntaxe a grandement contribué au succès de React</li>
-                    </ul>
-                  </p>
-                </div>
-                <div class="mdl-card__actions">
-                  <a href="https://facebook.github.io/react/" class="mdl-button">React</a>
-                </div>
-              </div>
-            </section>
-
-            <!-- MDL -->
-            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-              <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-                <i class="material-icons">opacity</i>
-              </header>
-
-              <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text">
-                  <h4>Material design</h4>
-                  <p>
-                    Focus prend le partie de s'appuyer sur le Material Design, proposé par Google dont la spécification est ici. Nous avons donc choisi de nous appuyer sur la librairie CSS réalisé par Google appellée Material Design Lite. La plupart des composants material sont intégrés directement par Focus mais n'hésitez pas à parcourir la documentation de Google qui est très bien réalisée.
-                  </p>
-                </div>
-                <div class="mdl-card__actions">
-                  <a href="https://facebook.github.io/react/" class="mdl-button">React</a>
-                </div>
-              </div>
-            </section>
-          </div>
-
-
-
-
-        <!-- FORmation-->
-        <div class="mdl-layout__tab-panel" id="formation">
-
-          <!--TITLE -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-              <div class="mdl-cell mdl-cell--12-col">
-                <h3>Les différentes formations données dans le cadre des projets utilisant focus </h3>
-              </div>
-          </section>
-
-          <!-- Formation COnception-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">face</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Conception</h4>
-                 ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://get-focus.github.io/formation-js/#/" class="mdl-button">Slides</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- Formation JS-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">favorite</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>JavaScript</h4>
-                Les bonnes pratiques, ES2015, les closures, les Promises ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://get-focus.github.io/formation-js/#/" class="mdl-button">Slides</a>
-              </div>
-            </div>
-          </section>
-          <!-- Formation Style-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">opacity</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Le style de vos applications</h4>
-                Les bonnes pratiques CSS,SASS, flexbox ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://get-focus.github.io/formation-styles#/" class="mdl-button">Slides</a>
-              </div>
-            </div>
-          </section>
-
-          <!-- Formation React-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">extension</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>React</h4>
-                Les bases de React ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://get-focus.github.io/formation-react#/" class="mdl-button">Slides</a>
-              </div>
-            </div>
-          </section>
-          <!-- Formation Focus-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">group_work</i>
-            </header>
-
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Focus</h4>
-                Les bases de Focus.js ...
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://get-focus.github.io/formation-focus#/" class="mdl-button">Slides</a>
-              </div>
-            </div>
-          </section>
-        </div>
-
-
-
-
-
-
-
-
-        <!-- -->
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--bottom-section">
-              Copyright &copy; KleeGroup 2016
-          </div>
-        </footer>
-      </main>
-    </div>
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-  </body>
-</html>
+                <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+            </body>
+            </html>
