@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="focus.css">
     <style>
     #view-source {
       position: fixed;
@@ -97,7 +98,13 @@
 
         <!-- Libs -->
         <div class="mdl-layout__tab-panel is-active" id="libs">
-
+        <!--TITLE EXTENTSIONS DISPOS-->
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h3>Les librairies FOCUS</h3>
+              <p>Ces librairies JavaScript offrent tous les outils pour accélérer le développement d'une application web SPA. Tous nos développements sont Open-Source et disponibles sur <a href="https://github.com/Kleegroup/">Github</a></p>
+            </div>
+        </section>
           <!-- Focus core-->
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
@@ -107,17 +114,19 @@
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>Focus Core</h4>
-                Focus core est le noyeau de Focus. Il s'occupe de gérer les éléments suivants
+                <p>Focus-core est la librairie au coeur des développements FOCUS.<br/>
+                Elle met à disposition l'ensemble des outils pour accélérer et fiabiliser le développement de comportements récurrents au sein de votre application.<br/>
+                Parmi ces outils, en voici les principaux : </p>
                 <ul>
-                  <li>Requêtes http et communication avec les seveur focus-core/network</li>
-                  <li>Les domaines et les définitions de champs focus-core/definition</li>
-                  <li>L'implémentation de flux</li>
-                  <li>Le router</li>
-                  <li>La gestion de l'application</li>
+                  <li>Les communications réseaux avec les serveurs BACKEND</li>
+                  <li>La gestion automatisée des formulaires (domaines, définitions...)</li>
+                  <li>L'implémentation de l'architecture <a href="https://facebook.github.io/flux/" target="_blank" title="Lien vers l'architecture FLUX" alt="Lien vers l'architecture FLUX">FLUX</a> qui spécifie le modèle de communication et des composants dans l'application</li>
+                  <li>Le router de l'application, qui standardise une méthode commune pour la navigation au travers de "routes" applicatives</li>
                 </ul>
+                <p>Cette librairie ne publie aucun composant graphique. Elle est cependant au coeur des dépendances des développements FOCUS.</p>
               </div>
               <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-core" class="mdl-button">Focus core sur gitub</a>
+                <a href="https://github.com/KleeGroup/focus-core" class="mdl-button">Github</a>
               </div>
             </div>
 
@@ -132,11 +141,16 @@
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>Focus Components</h4>
-                C'est la librairie de composants graphiques développée par Focus. Elle comporte un grand nombre de composant graphiques prêt à l'emploi.
+                <p>Focus-components est la librairie des éléments graphiques FOCUS, prêts à l'emploi.<br/>
+                Telle une boite de LEGO&reg;, elle met à disposition beaucoup de composants pour accéler le développements des pages respectant un template FOCUS.<br/>
+                </p>
+                <p>Ces composants sont issus d'une recherche du "best of the web" et intègrent une réelle réflexion UX <i>(User Experience)</i>. Ils sont optimisés au quotidien pour tenter de maximer la DX <i>(Developer Exeperience)</i> et facilier ainsi la prise en main et l'utilisation par les développeurs Fontend.</p>
+                <p>Enfin, côté UI, cette librairie reprend tous les codes du Matérial Design en se basant sur la librairie <a href="http://getmdl.io" title="Material Design Lite" alt="Material Design Lite" target="_blank">Material Design Lite</a> de Google.</p>
                 </ul>
               </div>
               <div class="mdl-card__actions">
-                <a href="https://github.com/KleeGroup/focus-components" class="mdl-button">Focus components sur gitub</a>
+                <a href="https://github.com/KleeGroup/focus-components" class="mdl-button">Github</a>
+                <a href="http://kleegroup.github.io/focus-showcase/" class="mdl-button">Showcase</a>
               </div>
             </div>
           </section>
