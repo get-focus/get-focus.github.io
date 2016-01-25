@@ -1,4 +1,10 @@
 
+[data-title="focus"] H1 {
+    font-family: Roboto;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
     background-color: rgba(245, 245, 245, 0.7);
 }
