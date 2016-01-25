@@ -410,6 +410,66 @@
 
         </div>
 
+        <div class="mdl-layout__tab-panel" id="technology">
+
+          <!--TITLE -->
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+              <div class="mdl-cell mdl-cell--12-col">
+                <h3>Technologies utiliseés par Focus </h3>
+              </div>
+          </section>
+
+          <!-- React-->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <i class="material-icons">dashboard</i>
+            </header>
+
+              <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                <div class="mdl-card__supporting-text">
+                  <h4>React</h4>
+                  <p>
+                    Elle est construite autour de principes très simples:
+                    <ul>
+                      <li>React ne sert qu'à créer des composants graphiques </li>
+                      <li>Les composants sont par définition composables à l'infini. (un peu comme des Lego)</li>
+                      <li>les composants graphques disposent de deux informations les props qui sont fournies par un composant parent et qui sont non mutables, le state qui est mutable et qui traduit de l'état interne du composant.</li>
+                      <li>
+                        Habituellement les composants graphiques sont rendu directrement dans le Document Object Model aussi appellé DOM. Ce dernier, lié au navigateur est assez lent et possède de nombreuses informations liée au navigateur rendant complexe l'interaction avec ce dernier. En s'inspirant des moteurs de jeux video, React s'appuie sur un DOM Virtuel, à chaque changement d'état de l'application les composants concernés sont rendus à nouveau dans DOM virtuel.
+                        React a construit un pont entre le DOM réel et le DOM virtuel, chaque changement dans le DOM virtuel est reporté efficacement dans le DOM réel. Les gains en fiabilité et en performance sont concidérables sur une application.
+                      </li>
+                      <li>React apporte également la syntaxe JSX qui permet de combiner un style d'écriture à la HTML pour les composants tout en utilisant le JavaScript. Cette syntaxe a grandement contribué au succès de React</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="mdl-card__actions">
+                  <a href="https://facebook.github.io/react/" class="mdl-button">React</a>
+                </div>
+              </div>
+            </section>
+
+            <!-- MDL -->
+            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+              <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                <i class="material-icons">opacity</i>
+              </header>
+
+              <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                <div class="mdl-card__supporting-text">
+                  <h4>Material design</h4>
+                  <p>
+                    Focus prend le partie de s'appuyer sur le Material Design, proposé par Google dont la spécification est ici. Nous avons donc choisi de nous appuyer sur la librairie CSS réalisé par Google appellée Material Design Lite. La plupart des composants material sont intégrés directement par Focus mais n'hésitez pas à parcourir la documentation de Google qui est très bien réalisée.
+                  </p>
+                </div>
+                <div class="mdl-card__actions">
+                  <a href="https://facebook.github.io/react/" class="mdl-button">React</a>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+
 
         <!-- FORmation-->
         <div class="mdl-layout__tab-panel" id="formation">
