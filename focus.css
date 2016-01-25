@@ -2,7 +2,10 @@
 [data-title="focus"] H1 {
     font-family: Roboto;
     font-weight: lighter;
-    text-transform: uppercase;
+}
+
+[data-title="focus"] H1 strong {
+    //text-transform: uppercase;
 }
 
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
