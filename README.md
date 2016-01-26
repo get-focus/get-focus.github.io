@@ -1,2 +1,2 @@
 # getfocus.io
-Get focus public web site
+Focus public [website](http://getfocus.io).
