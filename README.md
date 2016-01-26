@@ -1,2 +1,2 @@
-# get-focus.github.io
+# getfocus.io
 Get focus public web site
