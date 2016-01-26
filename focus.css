@@ -15,3 +15,82 @@
 .mdl-mega-footer {
     margin-top: 80px;
 }
+
+[data-section="focus-core"] header {
+    background-image:  url('./images/focus-core2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+[data-section="focus-components"] header {
+    background-image:  url('./images/focus-components.jpg');
+    background-color: #E7E7CA !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 62%;
+}
+
+[data-section="focus-file"] header {
+    background-image:  url('./images/focus-file.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="focus-notifications"] header {
+    background-image:  url('./images/focus-notifications.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="focus-comments"] header {
+    background-image:  url('./images/focus-comments.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="focus-help"] header {
+    background-image:  url('./images/focus-help2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="focus-mobile"] header {
+    background-image:  url('./images/focus-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="focus-blog"] header {
+    background-image:  url('./images/focus-blog.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="vertigo-blog"] header {
+    background-image:  url('./images/focus-blog.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="focus-docs"] header {
+    background-image:  url('./images/focus-docs.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-section="react"] header {
+    background-image:  url('./images/react.png');
+    background-color: #222 !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+[data-section="mdl"] header {
+    background-image:  url('./images/mdl.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
