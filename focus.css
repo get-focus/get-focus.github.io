@@ -5,6 +5,14 @@
     }
 }
 
+@media (max-width: 1020px)  {
+  [data-title="focus"] H1 {
+      margin-top: 0px;
+  }
+
+
+}
+
 
 [data-title="focus"] H1 {
     font-family: Roboto;
@@ -22,6 +30,18 @@
 .mdl-mega-footer {
     margin-top: 80px;
 }
+
+[data-focus='mascotte']{
+   position: absolute;
+   top: 10px;
+   right: 79px;
+   height: 179px;
+}
+
+[data-focus='mascotte'] img{
+  height: 100%;
+}
+
 
 [data-section="focus-core"] header {
     background-image:  url('./images/focus-core.jpg');
