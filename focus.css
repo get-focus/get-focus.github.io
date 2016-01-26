@@ -1,3 +1,10 @@
+@media (min-width: 1280px)  {
+    a#job-link {
+        right:150px;
+        position: absolute;
+    }
+}
+
 
 [data-title="focus"] H1 {
     font-family: Roboto;
@@ -90,6 +97,13 @@
 
 [data-section="mdl"] header {
     background-image:  url('./images/mdl.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+[data-section="developer-javascript"] header {
+    background-image:  url('./images/developer-javascript.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
